@@ -12,10 +12,12 @@ function Footer() {
     return (
     <div className="footer">
         <div className="SocialMedia">
-        <InstagramIcon />
-        <TwitterIcon />
-        <FacebookIcon />
-        <LinkedInIcon />
+            <p>
+                <InstagramIcon />
+                <TwitterIcon />
+                <FacebookIcon />
+                <LinkedInIcon />
+            </p>
         </div>
         <p> &copy; 2025 pedrotechpizza.com</p>
         </div>
