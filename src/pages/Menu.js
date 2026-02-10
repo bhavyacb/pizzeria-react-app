@@ -2,6 +2,7 @@
 import React from 'react';
 import { MenuList } from '../helpers/MenuList';
 import '../styles/Menu.css'; // optional
+import MenuItem from '../components/MenuItem';
 
 export default function Menu() {
   return (
@@ -9,11 +10,7 @@ export default function Menu() {
       <h1>Menu</h1>
       <div className="menu-grid">
         {MenuList.map((pizza, idx) => (
-          <div className="menu-card" key={idx}>
-            <img src={pizza.image} alt={pizza.name} className="menu-image" />
-            <h3>{pizza.name}</h3>
-            <p>${pizza.price.toFixed(2)}</p>
-          </div>
+          <MenuItem image={pizza.image} name={pizza.name} price={pizza.price} />
         ))}
       </div>
     </div>

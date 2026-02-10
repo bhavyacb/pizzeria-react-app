@@ -2,6 +2,7 @@ import {useState} from 'react';
 import logo from '../assets/images.jpg';
 import { Link } from "react-router-dom";
 import ReorderIcon from '@mui/icons-material/Reorder';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import '../styles/Navbar.css';
 
 function Navbar() {
@@ -22,6 +23,7 @@ function Navbar() {
                     <Link to="/menu">Menu</Link>
                     <Link to="/about">About</Link>
                     <Link to="/contact">Contact</Link>
+                    <Link to="/cart"><ShoppingCartIcon /><span>0</span></Link>
                     <button onClick={toggleNavbar}>
                     <ReorderIcon />
                     </button>

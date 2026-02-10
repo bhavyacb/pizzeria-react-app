@@ -1,0 +1,17 @@
+.navbar #open {
+  padding-left: 0px;
+}
+.navbar #open img {
+  display: none;
+}
+
+/* Specific styles for the cart link to align icon and text */
+.navbar .rightSide a[href="/cart"] {
+  display: flex;
+  align-items: center;
+  gap: 5px;  /* Space between icon and text */
+}
+
+.navbar .rightSide a[href="/cart"] svg {
+  font-size: 20px;  /* Adjust icon size to match text (default MUI icon size) */
+}

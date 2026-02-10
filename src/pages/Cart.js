@@ -1,8 +1,10 @@
-import React,{useState} from 'react'
-import Counter from './Counter';
+import react from 'react';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import '../styles/Cart.css';
+import Counter from '../components/Counter';
 
 
-function MenuItem({image, name, price}) {
+function Cart({image, name, price}) {
   const [showCounter, setShowCounter] = useState(false);
 
 
@@ -15,7 +17,7 @@ function MenuItem({image, name, price}) {
   }
 
   return (
-    <div className="menuItem">
+    <div className="Counter">
           <div style={{ backgroundImage: `url(${image})` }}> </div>
           <h1> {name} </h1>
           <p> $ {price} </p>  
@@ -26,4 +28,4 @@ function MenuItem({image, name, price}) {
   );
 }
 
-export default MenuItem
+export default Cart;
